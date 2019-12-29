@@ -1,0 +1,180 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+html {
+  height: 100%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  min-height: 100%;
+}
+#root {
+  text-align: center;
+}
+
+td,
+th {
+  border: 1px solid #282c34;
+  padding: 5px 10px;
+}
+
+table {
+  table-layout: fixed;
+  /* width: 100%; */
+  *margin-left: -100px; /*ie7*/
+}
+
+table,
+td,
+th {
+  border-spacing: 0;
+  height: 28px;
+  vertical-align: middle;
+}
+
+th {
+  background-color: rgb(81, 84, 87);
+  color: #ffffff;
+}
+
+tr:nth-child(odd) td {
+  background-color: rgba(207, 204, 204, 0.425);
+}
+tr:nth-child(even) td {
+  background-color: white;
+}
+
+.header {
+  text-align: center;
+  font-family: "Yatra One", cursive;
+  font-size: 28px;
+  padding: 20px;
+}
+.s-no {
+  position: absolute;
+  *position: relative; /*ie7*/
+  left: 0;
+  width: 49px;
+}
+.shift {
+  position: absolute;
+  *position: relative; /*ie7*/
+  left: 0;
+  width: 149px;
+}
+input {
+  width: 95%;
+}
+.emp-name {
+  position: absolute;
+  *position: relative; /*ie7*/
+  left: 70px;
+  width: 179px;
+  text-align: center;
+}
+.outer {
+  position: relative;
+  display: inline-block;
+}
+.inner {
+  overflow-y: visible;
+  width: 100%;
+  margin-left: 270px;
+}
+.inner-result {
+  overflow-y: visible;
+  width: 100%;
+  margin-left: 170px;
+}
+.hide {
+  display: none;
+}
+.inner-result table {
+  margin: 20px 0;
+}
+.name-result {
+  white-space: nowrap;
+}
+.btn {
+  font: bold 12px Arial;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-top: 1px solid #cccccc;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #cccccc;
+  display: inline-block;
+  margin: 10px;
+}
+.add-emp {
+  background-color: #eeeeee;
+  color: #333333;
+}
+.calculate-plan {
+  background-color: #4479ba;
+  color: #ffffff;
+}
+.footer {
+  bottom: 0;
+  position: absolute;
+  background-color: #efefef;
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 10px;
+}
+.footer a {
+  color: #000000;
+  font-style: italic;
+}
+
+@media only screen and (max-width: 599px) {
+  .s-no {
+    width: 29px;
+  }
+  .emp-name {
+    left: 50px;
+    width: 149px;
+  }
+  .inner {
+    overflow-x: scroll;
+    width: calc(100% - 220px);
+    margin-left: 220px;
+  }
+  .inner-result {
+    overflow-x: scroll;
+    width: calc(100% - 170px);
+    margin-left: 170px;
+  }
+  .outer,
+  body,
+  #root {
+    width: 100%;
+  }
+}
