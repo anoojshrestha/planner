@@ -85,19 +85,17 @@ class Planner extends Component {
   calculatePlan() {
     this.setState({ calculated: 1 });
 
-    if (this.state.calculated === 1) {
-      this.state.id.map(empidn => {
-        this.state.days.map(daa => {
-          let e = document.getElementById("select_" + daa + "_" + empidn);
-          this.state[daa][empidn] = {
-            id: empidn,
-            day: daa,
-            value: e.options[e.selectedIndex].value
-          };
-          this.setState({ daa: this.state[daa] });
-        });
+    this.state.id.map(empidn => {
+      this.state.days.map(daa => {
+        let e = document.getElementById("select_" + daa + "_" + empidn);
+        this.state[daa][empidn] = {
+          id: empidn,
+          day: daa,
+          value: e.options[e.selectedIndex].value
+        };
+        this.setState({ daa: this.state[daa] });
       });
-    }
+    });
 
     this.state.days.map((val, index) => {
       let key = 0;
